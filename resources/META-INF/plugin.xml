@@ -1,0 +1,35 @@
+<idea-plugin>
+  <id>cn.kt.code-notes.id</id>
+  <name>code-notes</name>
+  <version>1.0</version>
+  <vendor email="396367775@qq.com" url="https://github.com/kmaster?tab=repositories">kt</vendor>
+
+  <description><![CDATA[
+     给自己的代码做记录，然后分享出来，所有人都可以看，且可以直接粘贴到自己的代码中 <br>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      将每次的修改变动记录在这里.现在是刚创建本项目，计划先做本地版本，再做联网版本<br>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <action id="HelloWorld" class="cn.kt.HelloWorldAction" text="Say Hello!">
+      <add-to-group group-id="WindowMenu" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
